@@ -59,6 +59,8 @@ enum trace_group_e
     GROUP_SHELL = 1 << 3,
     GROUP_APP = 1 << 4,
     GROUP_ISO = 1 << 5,
+    GROUP_ALL = 1 << 6,
+    GROUP_NON_APP = 1 << 7,
 };
 
 enum event_id_e

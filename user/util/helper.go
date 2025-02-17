@@ -293,6 +293,8 @@ const (
 	GROUP_SHELL  uint32 = 1 << 3
 	GROUP_APP    uint32 = 1 << 4
 	GROUP_ISO    uint32 = 1 << 5
+	GROUP_ALL    uint32 = 1 << 6
+	GROUP_NON_APP uint32 = 1 << 7
 )
 
 const (

@@ -220,6 +220,10 @@ func persistentPreRunEFunc(command *cobra.Command, args []string) error {
             mconfig.TraceGroup |= util.GROUP_APP
         case "iso":
             mconfig.TraceGroup |= util.GROUP_ISO
+        case "all":
+            mconfig.TraceGroup |= util.GROUP_ALL
+        case "nonapp":
+            mconfig.TraceGroup |= util.GROUP_NON_APP
         default:
             is_find, info := pis.FindPackageByName(pkg_name)
             if !is_find {
