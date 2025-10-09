@@ -30,9 +30,9 @@
 #define MAX_PERCPU_BUFSIZE (1 << 15)  // set by the kernel as an upper bound
 #define PATH_MAX    4096
 #define MAX_STRING_SIZE    4096       // same as PATH_MAX
-#define MAX_BYTES_ARR_SIZE    4096       // same as PATH_MAX
+#define MAX_BYTES_ARR_SIZE    65536       // same as PATH_MAX
 #define MAX_BUF_READ_SIZE    65536
-#define ARGS_BUF_SIZE       32000
+#define ARGS_BUF_SIZE       262144
 
 // 配合 common_list 使用的 它们的间隔范围都是 0x400
 // 意味着它们每个选项有 1024 大小的范围 用于过滤完全足够了
